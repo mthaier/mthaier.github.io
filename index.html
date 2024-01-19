@@ -4,14 +4,14 @@
     <head>
 	<meta name="generator" content="Hugo 0.121.2">
             <meta charset="utf-8" />
-    <title>Mohammed Thaier Portfolio </title>
+    <title>Mohammed Thaier portfolio </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta property="og:title" content="Mohammed Thaier Portfolio" />
+    <meta name="description" content="4s3ti cv terminal format">
+    <meta property="og:title" content="Mohammed Thaier portfolio" />
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://github.mthaier.io/" />
+    <meta property="og:url" content="https://github.mthaier.io" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
     <link rel="canonical" href="https://github.mthaier.io/" />    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -55,6 +55,20 @@ jQuery(document).ready(function($) {
      
     function whois () {
         term.echo ("");
+         
+            term.echo ("[[b;grey;]Name:]\t\t\tMohammed Thaier");
+            term.echo ("[[b;grey;]Profession:]\t\tSoftware development");
+            term.echo ("[[b;grey;]Location:]\t\t");
+            
+                term.echo ("[[b;grey;]Email:]\t\t\tdevmoethaier@proton.me");
+            
+            
+                term.echo ("[[b;grey;]Homepage:]\t\thttps:\/\/github.mthaier.io");
+            
+            
+                term.echo ("")
+                term.echo ("The rawest form of freedome; is suffering by choice \n")
+            
         
         term.echo ("");
       }
@@ -62,6 +76,14 @@ jQuery(document).ready(function($) {
     function social () {
         term.echo("");
         
+            
+                
+                    term.echo("github:" + "https:\/\/github.com\/mthaier");
+                
+                    term.echo("instagram:" + "https:\/\/www.instagram.com\/e2.wave\/");
+                
+                    term.echo("Art account:" + "https:\/\/www.instagram.com\/e0.wave\/");
+                
             
         
         term.echo("")
@@ -80,10 +102,49 @@ jQuery(document).ready(function($) {
     function education () {
         term.echo("");
         
+            
+                term.echo("[[b;red;]Network Engineering]");
+                term.echo("June 2022 - Present");
+                
+                    term.echo("Usual computer science and engineering stuff");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
     }
 
     function skills () {
         term.echo(" ");
+        
+            
+                var bar_length = Math.round( 37  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;blue;]C#\/.net - Backend:]\n" +
+                        bar_filled + bar_blank + 
+                         37  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 48  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;blue;]Python, Lua, Bash - Scripting:]\n" +
+                        bar_filled + bar_blank + 
+                         48  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 50  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;blue;]Game dev - Graphic development:]\n" +
+                        bar_filled + bar_blank + 
+                         50  +"%");
+                
+                term.echo ("")
+            
         
     }
     function softskills () {
@@ -93,6 +154,26 @@ jQuery(document).ready(function($) {
       
     function languages () {
         term.echo("");
+        
+            
+                var bar_length = Math.round( 60  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;Blue;]English:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  60  +"%");
+                
+                term.echo("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;Blue;]Arabic:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  90  +"%");
+                
+                term.echo("")
+            
         
     }
 
@@ -225,8 +306,8 @@ jQuery(document).ready(function($) {
                           "please type 'help' for a list of available commands\n");
         }
     }, {
-        prompt: '[[;grey;]][[;grey;]:~$]' + " ",
-        greetings: "[[b;white;]]",
+        prompt: '[[;grey;]newuser@terminalcv][[;grey;]:~$]' + " ",
+        greetings: "[[b;white;]Hello World!\n\n\nType \u0027help\u0027 for a list of available commands\n]",
         keydown: function(e, term) {
             if (animation) {
                 if (e.which == 68 && e.ctrlKey) { 
